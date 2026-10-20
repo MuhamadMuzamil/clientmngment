@@ -1,0 +1,18 @@
+@model Client
+@{
+    ViewData["Title"] = "Add Client";
+}
+
+<h1 class="mb-3">Client Management System</h1>
+<h4 class="mb-3">Add New Client</h4>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <form asp-action="Create" method="post" novalidate>
+            <partial name="_ClientForm" model="Model" />
+
+            <button type="submit" class="btn btn-success">Save Client</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

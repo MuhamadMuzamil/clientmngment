@@ -1,0 +1,20 @@
+@model Client
+@{
+    ViewData["Title"] = "Edit Client";
+}
+
+<h1 class="mb-3">Client Management System</h1>
+<h4 class="mb-3">Edit Client #@Model.Id</h4>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <form asp-action="Edit" asp-route-id="@Model.Id" method="post" novalidate>
+            <input type="hidden" asp-for="Id" />
+
+            <partial name="_ClientForm" model="Model" />
+
+            <button type="submit" class="btn btn-success">Update Client</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

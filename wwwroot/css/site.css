@@ -1,0 +1,17 @@
+body {
+    background-color: #f5f7fa;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.table th {
+    white-space: nowrap;
+}
+
+footer {
+    background-color: #ffffff;
+}
